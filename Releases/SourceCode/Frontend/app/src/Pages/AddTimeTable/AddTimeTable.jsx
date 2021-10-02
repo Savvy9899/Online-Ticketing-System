@@ -7,7 +7,7 @@ export default class AddTimeTable extends Component {
   render() {
     return (
       <div className="container mb-5">
-        <h2 className="text-center m-5">Add Time Slot</h2>
+        <h2 className="text-center m-5">Add Time Table</h2>
 
         <div className="col-md-6 col-sm-12 center-align mt-5">
           <form>
@@ -21,6 +21,17 @@ export default class AddTimeTable extends Component {
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
+            </div>
+            <div className="mb-3">
+              <label for="exampleInputEmail1" className="form-label">
+                Route
+              </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
             <div className="mb-3">
               <label for="exampleInputEmail1" className="form-label">
@@ -69,31 +80,7 @@ export default class AddTimeTable extends Component {
                 aria-describedby="emailHelp"
               />
             </div>
-
-            <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
-                Assign Busses
-              </label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
-                Enter Driver
-              </label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
+            
             <div className="mb-3">
               <label for="exampleInputEmail1" className="form-label">
                 Enter Credit

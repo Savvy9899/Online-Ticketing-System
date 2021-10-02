@@ -7,6 +7,7 @@ import AddTimeTable from './Pages/AddTimeTable/AddTimeTable';
 import BookingDetails from './Pages/BookingDetails/BookingDetails';
 import BookTicket from './Pages/BookTicket/BookTicket';
 import AvaliableBuses from './Pages/AvaliableBuses/AvaliableBuses';
+import BottomNavBar from './Component/BottomNav/BottomNav';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <AvaliableBuses />
           </Route>
         </Switch>
+        <BottomNavBar/>
       </BrowserRouter>
     </div>
   );
