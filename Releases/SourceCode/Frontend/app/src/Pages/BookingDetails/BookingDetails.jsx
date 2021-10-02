@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { QRCode } from "react-qr-svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoins } from "@fortawesome/free-solid-svg-icons";
 import "./BookingDetails.css";
 export default class BookingDetails extends Component {
   render() {
     return (
       <div className="container">
         <h2 className="text-center m-3"> Booking Details</h2>
+        <p className="text-end me-3">
+          <FontAwesomeIcon icon={faCoins} /> <span className="ms-1"> 1000</span>
+        </p>
         <div className="bk-details text-center text-white mt-5">
           <div className="row">
             <div className="col-4">Time</div>

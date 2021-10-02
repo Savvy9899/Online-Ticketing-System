@@ -1,0 +1,9 @@
+.buses {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.buses-outer {
+  height: 100vh;
+  background-color: #0dcaf0;
+}
