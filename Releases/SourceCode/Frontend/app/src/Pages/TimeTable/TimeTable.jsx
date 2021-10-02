@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./TimeTable.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -10,9 +10,10 @@ export default class TimeTable extends Component {
   render() {
     return (
       <div className="container mt-5">
-        <button className="btn btn-info p-2 text-white">
-          <Link to="/timeTable/addTimeTable"></Link>
-          <FontAwesomeIcon icon={faPlus} /> ADD TIME TABLE
+        <button className="btn btn-info p-2 ">
+          <Link to="/timeTable/addTimeTable" className="text-white">
+            <FontAwesomeIcon icon={faPlus} /> ADD TIME TABLE
+          </Link>
         </button>
         <h2 className="text-center m-3"> Time Table</h2>
         <div className="row text-center table-hedaer mb-4">
@@ -40,11 +41,11 @@ export default class TimeTable extends Component {
               <FontAwesomeIcon icon={faTrash} /> Delete
             </button>
             <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
-              <FontAwesomeIcon icon={faEdit} /> 
+              <FontAwesomeIcon icon={faEdit} />
             </button>
 
             <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
-              <FontAwesomeIcon icon={faTrash} /> 
+              <FontAwesomeIcon icon={faTrash} />
             </button>
           </div>
         </div>
