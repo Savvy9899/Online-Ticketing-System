@@ -1,23 +1,28 @@
 import logo from './logo.svg';
+import { Route, Switch, BrowserRouter } from "react-router-dom"
 import './App.css';
+import Header from './Component/Header/Header';
+import TimeTable from './Pages/TimeTable/TimeTable';
+import AddTimeTable from './Pages/AddTimeTable/AddTimeTable';
+import AddRoute from './Pages/AddRoute/AddRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+        <Route path="/addRoute">
+            <AddRoute/>
+          </Route>
+          <Route path="/timeTable/addTimeTable">
+            <AddTimeTable />
+          </Route>
+          <Route path="/timeTable">
+            <TimeTable />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
