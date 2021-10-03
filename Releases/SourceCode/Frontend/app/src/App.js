@@ -18,20 +18,20 @@ function App() {
           <Route path="/timeTable/addTimeTable">
             <AddTimeTable />
           </Route>
-          <Route path="/timeTable" exact>
-            <TimeTable />
-          </Route>
-          <Route path="/bookingDetails" exact>
+          <Route path="/bookingDetails" >
             <BookingDetails />
           </Route>
-          <Route path="/bookTicket" exact>
+          <Route path="/bookTickets" >
             <BookTicket />
           </Route>
-          <Route path="/avaliableBuses" exact>
+          <Route path="/avaliableBuses" >
             <AvaliableBuses />
           </Route>
+          <Route path="/timeTable">
+            <TimeTable />
+          </Route>
+          <BottomNavBar />
         </Switch>
-        <BottomNavBar/>
       </BrowserRouter>
     </div>
   );
