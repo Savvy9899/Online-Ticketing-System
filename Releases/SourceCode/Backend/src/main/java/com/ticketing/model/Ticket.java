@@ -1,17 +1,35 @@
 package com.ticketing.model;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.sql.Time;
+import java.util.Date;
+
+@Document(collection = "tickets")
 public class Ticket {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int ticketId;
-    private LocalDateTime time;
-    private LocalDate date;
+
+    private String userId;
+    private Time time;
+    private Date date;
     private String route;
     private String source;
     private String destination;
     private float price;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public int getTicketId() {
         return ticketId;
@@ -21,19 +39,19 @@ public class Ticket {
         this.ticketId = ticketId;
     }
 
-    public LocalDateTime getTime() {
+    public Time getTime() {
         return time;
     }
 
-    public void setTime(LocalDateTime time) {
+    public void setTime(Time time) {
         this.time = time;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

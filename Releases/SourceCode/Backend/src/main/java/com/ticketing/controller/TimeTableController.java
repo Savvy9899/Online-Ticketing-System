@@ -25,7 +25,6 @@ public class TimeTableController {
         return timeTableService.getAllTimetables();
     }
 
-
     @GetMapping("/getTimetablesByRouter/")
     public List<Timetable> getTimelinesByRoute(@RequestParam(value = "routeId") String routeId) {
         System.out.println(routeId);

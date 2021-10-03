@@ -29,4 +29,5 @@ public class TimeTableServiceImpl implements TimeTableService {
     public  List<Timetable> getTimetablesByRoute(String route){
         return (List<Timetable>) timeTableRepository.findTimetableByRouteDestinations(route);
     }
+
 }
