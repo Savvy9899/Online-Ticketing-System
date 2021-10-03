@@ -6,24 +6,31 @@ import BookingDetails from './Pages/BookingDetails/BookingDetails';
 import BookTicket from './Pages/BookTicket/BookTicket';
 import AvaliableBuses from './Pages/AvaliableBuses/AvaliableBuses';
 import BottomNavBar from './Component/BottomNav/BottomNav';
-
+import TicketSummary from './Pages/TicketSummary/TicketSummary';
+TicketSummary
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
         <Switch>
+          <Route path="/ticketSummary" >
+            <TicketSummary />
+            <BottomNavBar />
+          </Route>
           <Route path="/bookingDetails" >
             <BookingDetails />
+            <BottomNavBar />
           </Route>
           <Route path="/bookTickets" >
             <BookTicket />
+            <BottomNavBar />
           </Route>
           <Route path="/avaliableBuses" >
             <AvaliableBuses />
+            <BottomNavBar />
           </Route>
-          <BottomNavBar />
         </Switch>
+        <BottomNavBar />
       </BrowserRouter>
     </div>
   );

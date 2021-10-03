@@ -8,7 +8,7 @@ export default class BookTicket extends Component {
     return (
       <div className="container">
         <div>
-          <div className="row mt-4 ">
+          <div className="row mt-4">
             <div className="col-6">{/* <h2>Book a Ticket</h2> */}</div>
             <div className="col-6">
               <p className="text-end me-3">
@@ -19,7 +19,7 @@ export default class BookTicket extends Component {
           </div>
         </div>
 
-        <h2 className="text-center m-5">Book a Ticket</h2>
+        <h2 className="text-center m-3">Book a Ticket</h2>
         <div className="col-md-6 col-sm-12 center-align mt-5">
           <form>
             <div className="mb-3">
@@ -67,7 +67,12 @@ export default class BookTicket extends Component {
                 <option value="3">Three</option>
               </select>
             </div>
-
+            <div className="mb-3">
+              <label for="exampleInputEmail1" className="form-label">
+                Time
+              </label>
+             <input type="date" className="form-control" name="" id="" />
+            </div>
             <button type="submit" className="btn btn-info p-2 text-white">
               {/* <Link to="/timeTable/addTimeTable"></Link> */}
               Check Availability

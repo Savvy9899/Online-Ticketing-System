@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./Header.css";
 export default class Header extends Component {
   render() {
@@ -36,9 +36,11 @@ export default class Header extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <p>Routes</p>
-                  </a>
+                  <Link to="/routes">
+                    <a className="nav-link" href="#">
+                      <p>Routes</p>
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item justify-content-end">
                   <a className="nav-link" href="#">
