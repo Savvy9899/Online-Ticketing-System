@@ -27,10 +27,10 @@ const BottomNavBar = (props) => {
         history.push("/");
         break;
       case "ticket":
-        history.push("/search");
+        history.push("/bookTickets");
         break;
       case "bus":
-        history.push("/favourites");
+        history.push("/avaliableBuses");
         break;
       case "user":
         history.push("/account");
@@ -39,7 +39,7 @@ const BottomNavBar = (props) => {
         history.push("/account");
         break;
       default:
-        history.push("/");
+        // history.push("/");
         break;
     }
   }, [activeTabs, history]);

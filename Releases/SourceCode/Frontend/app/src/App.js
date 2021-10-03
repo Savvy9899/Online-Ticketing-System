@@ -1,37 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Switch, BrowserRouter } from "react-router-dom"
-import Header from './Component/Header/Header';
-import TimeTable from './Pages/TimeTable/TimeTable';
-import AddTimeTable from './Pages/AddTimeTable/AddTimeTable';
+
 import BookingDetails from './Pages/BookingDetails/BookingDetails';
 import BookTicket from './Pages/BookTicket/BookTicket';
 import AvaliableBuses from './Pages/AvaliableBuses/AvaliableBuses';
 import BottomNavBar from './Component/BottomNav/BottomNav';
-
+import TicketSummary from './Pages/TicketSummary/TicketSummary';
+TicketSummary
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
         <Switch>
-          <Route path="/timeTable/addTimeTable">
-            <AddTimeTable />
+          <Route path="/ticketSummary" >
+            <TicketSummary />
+            <BottomNavBar />
           </Route>
-          <Route path="/timeTable" exact>
-            <TimeTable />
-          </Route>
-          <Route path="/bookingDetails" exact>
+          <Route path="/bookingDetails" >
             <BookingDetails />
+            <BottomNavBar />
           </Route>
-          <Route path="/bookTicket" exact>
+          <Route path="/bookTickets" >
             <BookTicket />
+            <BottomNavBar />
           </Route>
-          <Route path="/avaliableBuses" exact>
+          <Route path="/avaliableBuses" >
             <AvaliableBuses />
+            <BottomNavBar />
           </Route>
         </Switch>
-        <BottomNavBar/>
+        <BottomNavBar />
       </BrowserRouter>
     </div>
   );

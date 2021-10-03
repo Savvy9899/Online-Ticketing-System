@@ -8,7 +8,6 @@ export default class AddTimeTable extends Component {
     return (
       <div className="container mb-5">
         <h2 className="text-center m-5">Add Time Table</h2>
-
         <div className="col-md-6 col-sm-12 center-align mt-5">
           <form>
             <div className="mb-3">

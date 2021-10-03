@@ -1,9 +1,6 @@
-import React, { Component } from "react";
-import "./AvaliableBuses.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoins } from "@fortawesome/free-solid-svg-icons";
-export default class AvaliableBuses extends Component {
-  componentDidMount() {}
+import React, { Component } from 'react'
+
+export default class TicketSummary extends Component {
   render() {
     return (
       <div className="buses-outer">
@@ -54,6 +51,6 @@ export default class AvaliableBuses extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
