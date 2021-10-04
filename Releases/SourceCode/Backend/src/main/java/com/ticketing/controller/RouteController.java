@@ -45,4 +45,11 @@ public class RouteController {
     public List<MainRoutes> getAllMainRoutes(){
         return mainRoutesService.getAllMainRoutes();
     }
+
+    @GetMapping("/getAllRoutes")
+    public List<Route> getAllRoutes(){
+        return routeService.getAllRoutes();
+    }
+
+
 }

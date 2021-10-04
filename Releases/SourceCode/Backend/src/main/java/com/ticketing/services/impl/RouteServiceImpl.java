@@ -25,4 +25,9 @@ public class RouteServiceImpl implements RouteService {
     public List<Route> getRouteById(String routeId) {
         return (List<Route>) routeRepository.getRouteByRouteId(routeId);
     }
+
+    @Override
+    public List<Route> getAllRoutes() {
+        return routeRepository.findAll();
+    }
 }
