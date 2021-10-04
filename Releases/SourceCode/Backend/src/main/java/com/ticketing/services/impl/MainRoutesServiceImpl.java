@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class MainRoutesServiceImpl implements MainRoutesService {
@@ -23,4 +25,10 @@ public class MainRoutesServiceImpl implements MainRoutesService {
     public MainRoutes getMainRoute(String routeId) {
         return mainRoutesRepository.getMainRoutesByRouteId(routeId);
     }
+
+    @Override
+    public List<MainRoutes> getAllMainRoutes() {
+        return mainRoutesRepository.findAll();
+    }
 }
+

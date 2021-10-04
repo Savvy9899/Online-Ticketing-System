@@ -40,4 +40,9 @@ public class RouteController {
     public MainRoutes getMainRoutesById(@RequestParam(value = "routeId") String routeId){
         return mainRoutesService.getMainRoute(routeId);
     }
+
+    @GetMapping("/getAllMainRoutes")
+    public List<MainRoutes> getAllMainRoutes(){
+        return mainRoutesService.getAllMainRoutes();
+    }
 }
