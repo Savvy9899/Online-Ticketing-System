@@ -22,16 +22,6 @@ export default class AddRoute extends Component {
             </div>
             <div className="mb-3">
               <label for="exampleInputEmail1" className="form-label">
-                Route ID
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
                 Route Name
               </label>
               <input
