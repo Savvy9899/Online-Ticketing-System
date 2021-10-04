@@ -1,4 +1,5 @@
 package com.ticketing.services.impl;
+import com.ticketing.model.QRCode;
 import com.ticketing.model.Ticket;
 import com.ticketing.repositories.TicketRepository;
 import com.ticketing.services.TicketService;
@@ -18,6 +19,10 @@ public class TicketServiceImpl implements TicketService {
         return ticketRepository.save(ticket);
     }
 
+    @Override
+    public Ticket getTicket(String userId) {
+        return ticketRepository.getTicketByUserId(userId);
+    }
 
 
 }

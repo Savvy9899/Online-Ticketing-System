@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 
 @Document(collection = "tickets")
@@ -16,20 +19,12 @@ public class Ticket {
     private int ticketId;
 
     private String userId;
-    private Time time;
-    private Date date;
+    private LocalTime time;
+    private LocalDate date;
     private String route;
     private String source;
     private String destination;
     private float price;
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 
     public int getTicketId() {
         return ticketId;
@@ -39,19 +34,27 @@ public class Ticket {
         this.ticketId = ticketId;
     }
 
-    public Time getTime() {
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public LocalTime getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(LocalTime time) {
         this.time = time;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

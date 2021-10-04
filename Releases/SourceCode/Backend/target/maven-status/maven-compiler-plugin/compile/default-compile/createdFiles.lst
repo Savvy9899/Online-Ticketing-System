@@ -2,6 +2,7 @@ com/ticketing/repositories/ForeignPassengerRepository.class
 com/ticketing/services/impl/PassengerServiceImpl.class
 com/ticketing/repositories/LocalPassengerRepository.class
 com/ticketing/model/BusHalt.class
+com/ticketing/model/QRCode.class
 com/ticketing/services/PassengerService.class
 com/ticketing/model/ForeignPassenger.class
 com/ticketing/model/Passenger.class

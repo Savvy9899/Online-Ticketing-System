@@ -18,6 +18,7 @@
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/model/Timetable.java
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/services/RouteService.java
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/controller/TicketController.java
+/Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/model/QRCode.java
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/services/impl/PassengerServiceImpl.java
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/model/BusHalt.java
 /Users/tironelorence/Desktop/Projects/Online-Ticketing-System/Releases/SourceCode/Backend/src/main/java/com/ticketing/controller/TimeTableController.java

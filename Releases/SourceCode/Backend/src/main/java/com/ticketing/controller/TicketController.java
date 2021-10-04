@@ -1,4 +1,5 @@
 package com.ticketing.controller;
+import com.ticketing.model.QRCode;
 import com.ticketing.model.Ticket;
 import com.ticketing.services.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,11 @@ public class TicketController {
     @PostMapping("/addTicket")
     public Ticket addTimetable(@RequestBody Ticket ticket){
         return ticketService.addTicket(ticket);
+    }
+
+    @GetMapping("/getTicket")
+    public Ticket getTicketDetails(@RequestParam(value = "userId") String userId){
+        return ticketService.getTicket(userId);
     }
 
 }
