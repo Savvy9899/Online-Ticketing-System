@@ -11,4 +11,5 @@ import java.util.List;
 public interface RouteService {
     Route addRoute(Route route);
     List<Route> getRouteById(String routeId);
+    List<Route> getAllRoutes();
 }
