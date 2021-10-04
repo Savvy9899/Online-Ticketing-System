@@ -20,7 +20,7 @@ public class Timetable {
     private String startTime;
     private String endTime;
     private LocalDate date;
-    private double credit;
+
 
     public LocalDate getDate() {
         return date;
