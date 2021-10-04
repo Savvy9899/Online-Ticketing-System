@@ -8,6 +8,15 @@ public class MainRoutes {
 
     private String routeId;
     private String routeName;
+    private String routePrice;
+
+    public String getRoutePrice() {
+        return routePrice;
+    }
+
+    public void setRoutePrice(String routePrice) {
+        this.routePrice = routePrice;
+    }
 
     public String getRouteId() {
         return routeId;
