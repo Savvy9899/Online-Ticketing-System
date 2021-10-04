@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class RouteServiceImpl implements RouteService {
@@ -17,5 +19,10 @@ public class RouteServiceImpl implements RouteService {
     @Override
     public Route addRoute(Route route) {
         return routeRepository.save(route);
+    }
+
+    @Override
+    public List<Route> getRouteById(String routeId) {
+        return (List<Route>) routeRepository.getRouteByRouteId(routeId);
     }
 }

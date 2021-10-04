@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.sql.Time;
+import java.time.LocalDate;
 
 @Document(collection = "timetables")
 public class Timetable {
@@ -18,7 +19,16 @@ public class Timetable {
     private String to;
     private String startTime;
     private String endTime;
+    private LocalDate date;
     private double credit;
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
     public String getTimetableId() {
         return timetableId;
