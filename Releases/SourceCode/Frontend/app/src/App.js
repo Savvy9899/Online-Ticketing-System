@@ -7,7 +7,7 @@ import BookTicket from './Pages/BookTicket/BookTicket';
 import AvaliableBuses from './Pages/AvaliableBuses/AvaliableBuses';
 import BottomNavBar from './Component/BottomNav/BottomNav';
 import TicketSummary from './Pages/TicketSummary/TicketSummary';
-TicketSummary
+
 function App() {
   return (
     <div>
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/ticketSummary" >
             <TicketSummary />
-            <BottomNavBar />
+            {/* <BottomNavBar /> */}
           </Route>
           <Route path="/bookingDetails" >
             <BookingDetails />
@@ -30,7 +30,7 @@ function App() {
             <BottomNavBar />
           </Route>
         </Switch>
-        <BottomNavBar />
+        {/* <BottomNavBar /> */}
       </BrowserRouter>
     </div>
   );

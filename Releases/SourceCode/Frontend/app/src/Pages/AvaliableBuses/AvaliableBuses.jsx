@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./AvaliableBuses.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+
 export default class AvaliableBuses extends Component {
   componentDidMount() {}
   render() {
