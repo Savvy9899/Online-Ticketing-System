@@ -63,10 +63,10 @@ export default class AddTimeTable extends Component {
                 onChange={this.handleChange}
                 name="routeDestinations"
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="150">150</option>
+                <option value="190">190</option>
+                <option value="200">200</option>
               </select>
             </div>
             <div className="mb-3">
@@ -79,10 +79,12 @@ export default class AddTimeTable extends Component {
                 onChange={this.handleChange}
                 name="from"
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="Malabe ">Malabe</option>
+                <option value="Kaduwela">Kaduwela</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Panadura">Panadura</option>
+                <option value="Delgoda">Delgoda</option>
               </select>
             </div>
 
@@ -96,10 +98,12 @@ export default class AddTimeTable extends Component {
                 onChange={this.handleChange}
                 name="to"
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="Malabe ">Malabe</option>
+                <option value="Kaduwela">Kaduwela</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Panadura">Panadura</option>
+                <option value="Delgoda">Delgoda</option>
               </select>
             </div>
 
@@ -136,7 +140,6 @@ export default class AddTimeTable extends Component {
               <input
                 type="number"
                 className="form-control"
-                aria-describedby="emailHelp"
                 onChange={this.handleChange}
                 name="credit"
               />

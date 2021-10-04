@@ -5,9 +5,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import Swal from "sweetalert2";
+import axios from "axios";
+import { GET_ALL_TIME_TABLE } from "../../Services/endpoints";
 
 export default class TimeTable extends Component {
+  state = {
+    timeTable: [],
+  };
+  componentDidMount() {
+    axios.get(GET_ALL_TIME_TABLE).then((res) => {
+      this.setState({
+        timeTable: res.data,
+      });
+    });
+  }
   render() {
+    const timeTable = this.state.timeTable;
     return (
       <div className="container mt-5">
         <button className="btn btn-info p-2 ">
@@ -22,33 +36,49 @@ export default class TimeTable extends Component {
           <div className="col-2">Start Time</div>
           <div className="col-2">From</div>
           <div className="col-2">To</div>
-          <div className="col-2">Bus No</div>
+          <div className="col-2">Date</div>
           <div className="col-2">Edit</div>
         </div>
-        <div className="row text-center table-data mb-3">
-          <div className="col-1 vertical-align">T001</div>
-          <div className="col-1 vertical-align">R001</div>
-          <div className="col-2 vertical-align">10:00am- 10:20am</div>
-          <div className="col-2 vertical-align">Kandy</div>
-          <div className="col-2 vertical-align">Colombo</div>
-          <div className="col-2 vertical-align">NA-2020</div>
-          <div className="col-2 vertical-align">
-            <button className="btn btn-info w-100 m-2 text-white d-none d-md-block">
-              <FontAwesomeIcon icon={faEdit} /> Edit
-            </button>
-
-            <button className="btn btn-info w-100 m-2 text-white d-none d-md-block">
-              <FontAwesomeIcon icon={faTrash} /> Delete
-            </button>
-            <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
-              <FontAwesomeIcon icon={faEdit} />
-            </button>
-
-            <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
-              <FontAwesomeIcon icon={faTrash} />
-            </button>
-          </div>
-        </div>
+        {timeTable.map((item) => {
+          return (
+            <div className="row text-center table-data mb-3">
+              <div className="col-1 vertical-align">
+                {item.timetableId ?? ""}
+              </div>
+              <div className="col-1 vertical-align">
+                {item.routeDestinations ?? ""}
+              </div>
+              <div className="col-2 vertical-align">
+                {item.startTime ?? ""} - {item.endTime ?? ""}
+              </div>
+              <div className="col-2 vertical-align">{item.from ?? ""}</div>
+              <div className="col-2 vertical-align">{item.to ?? ""}</div>
+              <div className="col-2 vertical-align">{item.date ?? ""}</div>
+              <div className="col-2 vertical-align">
+                <Link to="editTimeTable?{item}">
+                  <button className="btn btn-info w-100 m-2 text-white d-none d-md-block">
+                    <FontAwesomeIcon icon={faEdit} /> Edit
+                  </button>
+                </Link>
+                <Link to="deleteTimeTable?{item}">
+                  <button className="btn btn-info w-100 m-2 text-white d-none d-md-block">
+                    <FontAwesomeIcon icon={faTrash} /> Delete
+                  </button>
+                </Link>
+                <Link to="editTimeTable?{item}">
+                  <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
+                    <FontAwesomeIcon icon={faEdit} />
+                  </button>
+                </Link>
+                <Link to="deleteTimeTable?{item}">
+                  <button className="btn btn-info w-100 m-2 text-white d-sm-none d-block">
+                    <FontAwesomeIcon icon={faTrash} />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          );
+        })}
       </div>
     );
   }

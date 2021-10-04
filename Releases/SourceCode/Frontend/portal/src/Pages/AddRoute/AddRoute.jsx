@@ -86,10 +86,12 @@ export default class AddRoute extends Component {
                 name="timetableId"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="Malabe ">Malabe</option>
+                <option value="Kaduwela">Kaduwela</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Panadura">Panadura</option>
+                <option value="Delgoda">Delgoda</option>
               </select>
             </div>
             <div className="mb-3">

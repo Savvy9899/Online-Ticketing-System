@@ -65,10 +65,10 @@ export default class BookTicket extends Component {
                 name="route"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="150">150</option>
+                <option value="190">190</option>
+                <option value="200">200</option>
               </select>
             </div>
             <div className="mb-3">
@@ -81,10 +81,12 @@ export default class BookTicket extends Component {
                 name="source"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="Malabe ">Malabe</option>
+                <option value="Kaduwela">Kaduwela</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Panadura">Panadura</option>
+                <option value="Delgoda">Delgoda</option>
               </select>
             </div>
 
@@ -98,10 +100,12 @@ export default class BookTicket extends Component {
                 name="destination"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="Malabe ">Malabe</option>
+                <option value="Kaduwela">Kaduwela</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Panadura">Panadura</option>
+                <option value="Delgoda">Delgoda</option>
               </select>
             </div>
             <div className="mb-3">
@@ -114,10 +118,13 @@ export default class BookTicket extends Component {
                 name="date"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="2021-04-25">2021-04-25</option>
+                <option value="2021-08-24">2021-04-24</option>
+                <option value="2021-07-10">2021-04-10</option>
+                <option value="2021-03-18">2021-04-18</option>
+                <option value="2021-01-30">2021-04-30</option>
+                <option value="2021-11-06">2021-04-06</option>
               </select>
             </div>
             <div className="mb-3">
@@ -130,10 +137,13 @@ export default class BookTicket extends Component {
                 name="time"
                 onChange={this.handleChange}
               >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>-SELECT-</option>
+                <option value="10.00">10.00</option>
+                <option value="11.00">11.00</option>
+                <option value="12.00">12.00</option>
+                <option value="13.00">13.00</option>
+                <option value="14.00">14.00</option>
+                <option value="15.00">15.00</option>
               </select>
             </div>
 

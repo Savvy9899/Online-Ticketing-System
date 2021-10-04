@@ -77,12 +77,4 @@ public class Timetable {
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
-
-    public double getCredit() {
-        return credit;
-    }
-
-    public void setCredit(double credit) {
-        this.credit = credit;
-    }
 }
